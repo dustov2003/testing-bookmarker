@@ -23,3 +23,4 @@ pytest:
     - wait-for-port postgres:5432
   script:
     - poetry run pytest --verbosity=2 --showlocals --log-level=DEBUG --cov=bookmarker --cov-report html --cov-fail-under=$MIN_COVERAGE
+
